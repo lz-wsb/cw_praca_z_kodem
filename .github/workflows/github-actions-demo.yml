@@ -1,14 +1,14 @@
 name: My first workflow test
 on: [push]
 jobs:
- Test-github-actions-test1:
+ Test-github-actions-version_check:
   runs-on: ubuntu-latest
   steps:
    - run: python --version
    - run: docker --version
    - name: Check python and docker version
      uses: actions/checkout@v3
- Test-github-actions-test2:
+ Test-github-actions-pylint_check:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/setup-python@v2
