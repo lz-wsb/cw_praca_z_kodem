@@ -15,7 +15,7 @@ jobs:
    - run: dir
    - run: ls
    - run: sudo apt install pylint
-   - run: pylint app.py
+   - run: find . -name '*.py' -exec pylint {} \;
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
 
