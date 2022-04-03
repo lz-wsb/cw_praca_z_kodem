@@ -12,6 +12,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/setup-python@v2
+   - run: sudo apt install pylint
    - run: pylint app.py
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
