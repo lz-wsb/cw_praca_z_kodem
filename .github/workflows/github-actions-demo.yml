@@ -1,0 +1,14 @@
+name: My first workflow test
+on: [push]
+jobs:
+Test-github-actions:
+runs-on: ubuntu-latest
+steps:
+ - run: docker --version 
+ - name: Check docker version
+   uses: actions/checkout@v3
+jobs:
+Test-github-actions2:
+steps:
+ - run: python --version
+ - name: Check python version
