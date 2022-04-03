@@ -7,7 +7,7 @@ jobs:
    - run: docker --version 
    - name: Check docker version
      uses: actions/checkout@v3
-jobs:
+#jobs:
  Test-github-actions:
   runs-on: ubuntu-latest
   steps:
@@ -15,14 +15,14 @@ jobs:
    - run: docker --version
    - name: Check python and docker version
      uses: actions/checkout@v3
-jobs:
+#jobs:
  Test-github-actions:
   runs-on: ubuntu-latest
   steps:
    - run: pylint app.py
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
-jobs:
+#jobs:
  Test-github-actions:
   runs-on: ubuntu-latest
   steps:
