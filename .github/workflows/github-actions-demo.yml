@@ -11,9 +11,10 @@ jobs:
  Test-github-actions-test2:
   runs-on: ubuntu-latest
   steps:
+     uses: actions/checkout@v3
    - run: pylint app.py
    - name: Check python consistency in app.py
-     uses: actions/checkout@v3
+
  Test-github-actions-test3:
   runs-on: ubuntu-latest
   steps:
