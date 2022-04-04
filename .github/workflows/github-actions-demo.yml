@@ -18,7 +18,6 @@ jobs:
    - run: find . -name '*.py' -exec pylint {} \;
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
- 
  Test-github-actions-docker-img:
   runs-on: ubuntu-latest
   steps:
