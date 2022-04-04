@@ -1,3 +1,4 @@
+
 name: My first workflow test
 on: [push]
 jobs:
@@ -18,8 +19,10 @@ jobs:
    - run: find . -name '*.py' -exec pylint {} \;
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
+
  Test-github-actions-test3:
   runs-on: ubuntu-latest
   steps:
    - run: echo "OKEJ!!"
    - name: Check python consistency in app.py
+     uses: actions/checkout@v3
