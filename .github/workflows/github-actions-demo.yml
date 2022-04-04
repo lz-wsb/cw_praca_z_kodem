@@ -19,9 +19,10 @@ jobs:
    - name: Check python consistency in app.py
      uses: actions/checkout@v3
 
- Test-github-actions-test3:
+ Test-github-actions-docker_img:
   runs-on: ubuntu-latest
   steps:
-   - run: echo "OKEJ!!"
-   - name: Check python consistency in app.py
+     uses: actions/checkout@v3
+   - run: docker build --tag test-flask-app .
+   - name: Build docker image
      uses: actions/checkout@v3
