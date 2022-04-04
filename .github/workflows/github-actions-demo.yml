@@ -17,4 +17,3 @@ jobs:
    - run: sudo apt install pylint
    - run: find . -name '*.py' -exec pylint {} \;
    - name: Check python consistency in app.py
-
