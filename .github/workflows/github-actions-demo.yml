@@ -11,7 +11,7 @@ jobs:
  Test-github-actions-pylint_check:
   runs-on: ubuntu-latest
   steps:
-   - uses: actions/setup-python@v2
+     uses: actions/setup-python@v2
    - run: dir
    - run: ls
    - run: sudo apt install pylint
