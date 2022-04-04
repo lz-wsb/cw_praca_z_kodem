@@ -17,9 +17,4 @@ jobs:
    - run: sudo apt install pylint
    - run: find . -name '*.py' -exec pylint {} \;
    - name: Check python consistency in app.py
- Test-github-actions-docker-img:
-  runs-on: ubuntu-latest
-  steps:
-     uses: actions/checkout@v3
-   - run: docker build --tag test-flask-app .
-   - name: Build docker image
+
