@@ -23,6 +23,6 @@ jobs:
  Test-github-actions-test3:
   runs-on: ubuntu-latest
   steps:
-   - run: docker build --tag test-flask-app Dockerfile
+   - run: docker build --tag test-flask-app .
    - name: Create docker image
      uses: actions/checkout@v3
