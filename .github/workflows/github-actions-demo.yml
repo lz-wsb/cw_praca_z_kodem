@@ -4,10 +4,11 @@ jobs:
  Test-github-actions-version_check:
   runs-on: ubuntu-latest
   steps:
-   - run: python --version
-   - run: docker --version
    - name: Check python and docker version
      uses: actions/checkout@v3
+   - run: python --version
+   - run: docker --version
+
  Test-github-actions-pylint_check:
   runs-on: ubuntu-latest
   steps:
