@@ -12,13 +12,12 @@ jobs:
  Test-github-actions-pylint_check:
   runs-on: ubuntu-latest
   steps:
-   - uses: actions/setup-python@v2
+   - name: Check python consistency in app.py
+     uses: actions/setup-python@v2
    - run: dir
    - run: ls
    - run: sudo apt install pylint
    - run: find . -name '*.py' -exec pylint {} \;
-   - name: Check python consistency in app.py
-     uses: actions/checkout@v3
 
  Test-github-actions-test3:
   runs-on: ubuntu-latest
