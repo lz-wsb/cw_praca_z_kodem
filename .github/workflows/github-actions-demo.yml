@@ -17,7 +17,7 @@ jobs:
    - run: sudo apt install pylint
    - run: find . -name '*.py' -exec pylint {} \;
 
- Test-github-actions-test3:
+ Test-github-actions-docker_image:
   runs-on: ubuntu-latest
   steps:
    - name: Create docker image
